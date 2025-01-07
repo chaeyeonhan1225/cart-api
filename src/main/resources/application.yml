@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: cart-api
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/CartBase?useSSL=false&serverTimezone=UTC
+    username: root
+    password:
+  sql:
+    init:
+      mode: always
+  data:
+    redis:
+      host: localhost
+      port: 6379
